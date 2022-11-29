@@ -144,14 +144,36 @@ footerPanel.add(footerlabel);
 public void actionPerformed(ActionEvent e) {
 if (e.getSource() == submit) {
 	username.getText();
-	System.out.println("Username is:" + username.getText());
 	
+	//Check that username is valid
+//	if (username.getText() = ) {
+//	}
+//	else
+//	{
+//		username.setText("Username Invalid");
+//	}
 	password.getText();
-	System.out.println("Password is:" +password.getText());
+	
+	//check that password is valid
+//	if (password.getText() = ) {
+//	}
+//	else
+//	{
+//		password.setText("Password Invalid");
+//	}
+	
 	submit.setEnabled(false);
+	
+	//username and password valid, open up the water order page
+//	waterorderPage waterorderpage = new waterorderPage();
+	
 	}
+else {
+	username.setText("");
+	password.setText("");
+}
 		
-else if (e.getSource()== cancel) {
+if (e.getSource()== cancel) {
 	username.setText("");
 	password.setText("");
 	submit.setEnabled(true);
